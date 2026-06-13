@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook Online</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Guestbook Online</h1>
+
+        <form id="guestForm">
+
+            <input
+                type="text"
+                id="nama"
+                placeholder="Masukkan Nama"
+                required
+            >
+
+            <textarea
+                id="pesan"
+                placeholder="Masukkan Pesan"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Kirim Pesan
+            </button>
+
+        </form>
+
+        <hr>
+
+        <h2>Daftar Pesan</h2>
+
+        <div id="messageList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
